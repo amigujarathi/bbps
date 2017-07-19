@@ -1,0 +1,228 @@
+.cus-bg-color{
+	background-color:#f1f2f2;
+}
+@media screen and (min-width: 768px) and (max-width: 768px){
+
+.agent-grey-box{
+	margin-top: 6%;
+	border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-top: -5% !important;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+    padding-bottom: 20px;
+	text-align:left !important;
+}
+
+.xs-adjs{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 800px) {
+.agent-grey-box{
+	margin-top: 6%;
+	border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: -27px !important;
+    margin-top: -6% !important;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+    padding-bottom: 20px;
+	text-align:left !important;
+}
+.xs-adjs{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+
+}
+/* ============================================== */
+/* Small Tablet Landscape/Portrait                */
+/*                                        800x600 */
+/* ============================================== */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.agent-grey-box{
+	margin-top: 6%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -6%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+}
+
+@media screen and (min-width: 569px) and (max-width:599px) {
+.agent-grey-box{
+	margin-top: 6%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -6%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+}
+/* ============================================== */
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:568px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.agent-grey-box{
+	margin-top: 11%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -11%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+}
+
+/* ============================================== */
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:480px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.agent-grey-box {
+    margin-top: 20%;
+    border-radius: 0px;
+}
+.agent-grey-box-img {
+    text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.grey-box-txt_1, .grey-box-txt_2, .grey-box-txt_3 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+	text-align:center;
+}
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+/* ============================================== */
+@media screen and (min-width:240px) and (max-width:320px) {
+	.agent-grey-box {
+    margin-top: 20%;
+    border-radius: 0px;
+}
+.agent-grey-box-img {
+    text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.grey-box-txt_1, .grey-box-txt_2, .grey-box-txt_3 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+	text-align:center;
+}
+}
+@media only screen and (max-width: 549px) and (min-width: 480px){
+	.cus-bg-color{
+		background-color:#e6e7e8;
+	}
+}
+@media only screen and (max-width: 533px) and (min-width: 533px){
+	.cus-bg-color{
+		background-color:#f1f2f2;
+	}
+}
+@media only screen and (max-width: 568px) and (min-width: 568px){
+	.cus-bg-color{
+		background-color:#e6e7e8;
+	}
+}
+@media only screen and (max-width: 360px) and (min-width: 360px){
+	.additional-features-txt2,.additional-features-txt3{
+		padding: 28px 25px 16px;
+	}
+}
+@media only screen and (max-width: 375px) and (min-width: 375px){
+	.cus-bg-color{
+		background-color:#e6e7e8;
+	}
+	.additional-features-txt {
+		padding: 30px 25px 14px;
+	}
+	.additional-features-txt2 {
+		padding: 38px 25px 26px;
+	}
+	.additional-features-txt3{
+		padding: 26px 25px 16px;
+	}
+}
+@media only screen and (max-width: 414px) and (min-width: 414px){
+	.additional-features-txt {
+		padding: 30px 25px 14px;
+	}
+	.additional-features-txt2 {
+		padding: 38px 25px 26px;
+	}
+	.additional-features-txt3{
+		padding: 28px 25px 16px;
+	}
+}
+@media only screen and (max-width: 960px) and (min-width: 960px){
+	.agent-grey-box{
+		margin-top: 5%;
+		border-radius:0px;
+	}
+	.agent-grey-box-img{
+		text-align: center;
+		padding-top: 0px;
+		margin-left: 0px;
+		margin-top: -5%;
+	}
+	.agent-grey-box-txt{
+		margin-left:0px !important;
+		padding-top:15px !important;
+		padding-left: 10px;
+		padding-bottom: 20px;
+		text-align:left !important;
+	}
+}

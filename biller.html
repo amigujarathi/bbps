@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BBPS | Biller</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/biller.css">
+		
+        <!-------IE Support Javascript for Bootstrap--------->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+            /*-----------------------------------
+            9th Nov 2016 added css 
+            -------------------------------------*/
+
+            #bs-example-navbar-collapse-2 .nav>li>a {
+                color: #1a3281 ;
+            }
+
+            #bs-example-navbar-collapse-2 .nav>li>a:hover
+			{
+                color: #f67923 !important;
+            }
+			
+			#bs-example-navbar-collapse-2 .nav>li>a.active1{
+					color: #f67923 !important;
+					background-color: #f7f7f7 !important;
+				}
+				
+			#center-sub-nav2 .container-fluid {
+				text-align: center;
+				width: auto;
+				margin: 0 auto;
+				background-color: #f7f7f7;
+				border: 1px solid #999;
+			}
+			#central-sub-menu2{
+				margin:0 auto;
+				display: inline-block;
+				list-style:none;
+			}
+			#central-sub-menu2 li {
+				float: left;
+			}
+			#central-sub-menu2 li a , .dropdown-menu li a{
+				display:block;
+				text-decoration: none;
+				color: #1a3281;
+			}  
+			#central-sub-menu2 li a:hover, .dropdown-menu li a:hover{
+				color: #f67923 !important;
+			}
+			#central-sub-menu2 .subnavbar_li{
+				padding: 15px 23px !important;
+			}
+			.active1{
+				color: #f67923 !important;
+				background-color: #f7f7f7 !important;
+			} 
+			.img-bank{
+				background-color:#efefef;padding:30px 10px;
+			}
+			.img-text{
+				background-color:#efefef;padding: 49px 10px;
+			}
+			.role-text-blog > span{
+				color:#fff;
+				font-size:18px;
+			}
+			.role-text-blog > p{
+				color:#fff;
+			}
+			.active_menu{
+				color:#1a3281 !important;
+			}
+			
+			.animated { 
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+		 .animated2 { 
+            -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeInUp {
+            0% { 
+				 opacity: 0;
+                 -webkit-transform: translateY(+30px);
+				}
+            100% {
+			     opacity: 1;
+			     -webkit-transform: translateY(0);
+				}
+         }
+         
+         @keyframes fadeInUp {
+            0% {
+               opacity: 0;
+               transform: translateY(+30px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+         
+         .fadeInUp {
+         -webkit-animation-name: fadeInUp;
+         animation-name: fadeInUp;
+         } 
+		 
+		  @-webkit-keyframes fadeInLeft {
+            0% { 
+				 opacity: 0;
+                 -webkit-transform: translateX(-10%);
+				}
+            100% {
+			     opacity: 1;
+			     -webkit-transform: translateX(0);
+				}
+         }
+         
+         @keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(-10%);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+         }
+         
+         .fadeInLeft {
+         -webkit-animation-name: fadeInLeft;
+         animation-name: fadeInLeft;
+         } 
+		 
+		 @-webkit-keyframes fadeInRight {
+            0% { 
+				 opacity: 0;
+                 -webkit-transform: translateX(10%);
+				}
+            100% {
+			     opacity: 1;
+			     -webkit-transform: translateX(0);
+				}
+         }
+         
+         @keyframes fadeInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(10%);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+         }
+         
+         .fadeInRight {
+         -webkit-animation-name: fadeInRight;
+         animation-name: fadeInRight;
+         } 
+		 
+		  @-webkit-keyframes fadeIn {
+            0% { 
+				 opacity: 0;
+				}
+            100% {
+			     opacity: 1;
+				}
+         }
+         
+         @keyframes fadeIn {
+            0% {
+               opacity: 0;
+            }
+            100% {
+               opacity: 1;
+            }
+         }
+         
+         .fadeIn {
+         -webkit-animation-name: fadeIn;
+         animation-name: fadeIn;
+         } 
+        </style>
+        
+        
+    </head>
+    <body>
+	<div id="main-header">
+        <div class="row social-header">
+            <ul class="list-inline pull-right">
+                <li><i class="fa fa-facebook social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin social-color" aria-hidden="true"></i></li>
+            </ul>
+        </div> 
+        <!--head  -->
+        <div class="container-fluid" id="headtop">
+            <div class="row second-header visible-sm-* visible-md-* visible-lg-* hidden-xs">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a class="brand_img_adjust" href="index.html"><img class="img-responsive brand_img" src="images/BBPS_LOGO.png" alt="BBPS">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 sub-header-icons">
+                    <ul class="list-inline pull-right">
+                        <li class="round-circle"><a href="index.html"><img class="" src="images/small_icon/home2.png"></a></li>
+                        <li><a href="index.html"><label class="second-header-label hidden-xs ">Home</label></a></li>
+                        <li class="round-circle"><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><img class="" src="images/small_icon/mail-us2.png"></a></li>
+                        <li><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><label class="second-header-label hidden-xs ">Mail Us</label></a></li>
+                        <li class="round-circle"><a href="contact.html"><img class="" src="images/small_icon/contact2.png"></a></li>
+                        <li><a href="contact.html"><label class="second-header-label hidden-xs ">Contact Us</label></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 visible-sm-* visible-md-* visible-lg-*">
+                    <a class="brand_img_adjust pull-right" href="http://www.npci.org.in/" target="_blank">
+                        <img class="img-responsive brand_img left-brand-img-adjust" src="images/NPCI_LOGO.jpg" alt="BBPS" >
+                    </a>
+                </div>
+            </div>
+            <div class="row second-header hidden-sm-* hidden-md-* hidden-lg-* visible-xs">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <center>
+                        <a class="brand_img_adjust" href="index.html"><img class="img-responsive brand_img" src="images/BBPS_LOGO.png" alt="BBPS">
+                        </a>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <center>
+                        <ul class="list-inline">
+                            <li class="round-circle"><a href="index.html"><img class="" src="images/small_icon/home2.png"></a></li>
+                            <li><a href="index.html"><label class="second-header-label  hidden-xs">Home</label></a></li>
+                            <li class="round-circle"><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><img class="" src="images/small_icon/mail-us2.png"></a></li>
+                            <li><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><label class="second-header-label  hidden-xs">Mail Us</label></a></li>
+                            <li class="round-circle"><a href="contact.html"><img class="" src="images/small_icon/contact2.png"></a></li>
+                            <li><a href="contact.html"><label class="second-header-label  hidden-xs">Contact Us</label></a></li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 visible-sm-* visible-md-* visible-lg-*">
+                    <center>
+                        <a class="brand_img_adjust" href="http://www.npci.org.in/" target="_blank">
+                            <img class="img-responsive brand_img" src="images/NPCI_LOGO.jpg" alt="BBPS" >
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <!--head  -->
+        <!--navbar  -->
+        <nav class="navbar navbar-default nav_color" role="navigation">
+            <div class="container-fluid">
+                <!--     Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!--Collect the nav links, forms, and other content for toggling--> 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav main_nav">
+                        <!--                                <li ><a class="navbar_li" href="#">HOME</a></li>-->
+							<li ><a class="navbar_li" href="aboutus.html">ABOUT US</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle navbar_li" href="#" data-toggle="dropdown">PARTNER</a>
+							<ul class="dropdown-menu dp-adj">
+								<li><a href="whoisbbpou.html">BBPOU</a></li>
+								<li><a href="AgentInstitution.html">Agent Institution</a></li>
+								<li><a href="WhoIsAnAgentAndBenefits.html">Agent</a></li>
+							</ul>
+						</li>
+                            <li ><a class="navbar_li active_menu" href="biller.html">BILLER</a></li>
+                            <li ><a class="navbar_li" href="customer.html">CUSTOMER</a></li>
+                            <li ><a class="navbar_li" href="WhatsNew.html">WHAT'S NEW</a></li>
+							<li ><a class="navbar_li" href="library.html">LIBRARY</a></li>
+                            <li><a class="navbar_last" href="faqs.html">FAQs</a></li>
+                    </ul>
+                    <div class="col-xs-12 col-sm-6 col-md-3 pull-right visible-lg-* hidden-xs hidden-sm hidden-md">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inputValidation" placeholder="Search here..."/>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default search-btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                                <!--<span class="glyphicon glyphicon-search form-control-feedback" style="color:#fff;"></span>-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </nav>
+        <!--navbar  -->
+        <!--carousel  -->
+        <div class="">
+            <div id="carousel-example-generic" class="carousel slide"> 
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="" src="images/biller-page-slider-img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--carousel  -->
+        <!--end of desktop navbar-->
+
+        <!-- sub navbar start -->
+		<div id="center-sub-nav" class="">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse about-subnav navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                        <li><a id="li_custom_1" class="subnavbar_li" href="#who-is-biller">OVERVIEW</a></li>
+                        <li><a id="li_custom_2" class="subnavbar_li" href="#biller-categories">BILLER CATEGORIES</a></li>
+                        <li><a id="li_custom_3" class="subnavbar_li" href="#benefits">BENEFITS</a></li>
+                        <li><a id="li_custom_4" class="subnavbar_li" href="#roles-responsibilities">ROLES & RESPONSIBILITIES</a></li>
+                        <li><a id="li_custom_5" class="subnavbar_li" href="#standards">STANDARDS</a></li>
+                        <li><a id="li_custom_6" class="subnavbar_li" href="#biller-store">BILLER STORE</a></li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+		</div>
+        <!-- sub navbar end 
+		<div id="center-sub-nav2" class="visible-md visible-lg">
+			<div class="container-fluid" id="bs-example-navbar-collapse-2">
+				<ul class="" id="central-sub-menu2">
+					<li><a id="li_custom_1" class="subnavbar_li" href="#who-is-biller">OVERVIEW</a></li>
+					<li><a id="li_custom_2" class="subnavbar_li" href="#biller-categories">BILLER CATEGORIES</a></li>
+					<li><a id="li_custom_3" class="subnavbar_li" href="#benefits">BENEFITS</a></li>
+					<li><a id="li_custom_4" class="subnavbar_li" href="#roles-responsibilities">ROLES & RESPONSIBILITIES</a></li>
+					<li><a id="li_custom_5" class="subnavbar_li" href="#standards">STANDARDS</a></li>
+					<li><a id="li_custom_6" class="subnavbar_li" href="#biller-store">BILLER STORE</a></li>
+				</ul>
+			</div>
+		</div>-->
+
+</div>		
+        <!-- sub navbar end -->
+		<div class="article-sticky-stuff" id="sticky">
+			<div class="sticky-shares-wrap">
+				<div class="float-icon visible-sm visible-md visible-lg" style="margin-top:0px;">
+					<ul class="list-group">
+						<li class="list-group-item">
+						<a href="library.html" class="tooltip1"><img src="images/Libraries-icon.png" alt="#" class="img-responsive "/> <span class="tooltiptext1">Library</span></a>
+						
+						</li>
+						<li class="list-group-item"><a href="WhatsNew.html" class="tooltip1"><img src="images/faqs-icon.png" alt="#" class="img-responsive"/><span class="tooltiptext1">What's New</span></a></li>
+					</ul>
+				</div>
+				<div class="float-icon visible-xs" style="margin-top:0px;">
+					<ul class="list-group">
+						<li class="list-group-item">
+						<a href="library.html" class="tooltip1"><img src="images/Libraries-icon-mob.png" alt="#" class="img-responsive"/><span class="tooltiptext1">Library</span></a>
+						</li>
+						<li class="list-group-item"><a href="WhatsNew.html" class="tooltip1"><img src="images/faqs-icon-mob.png" alt="#" class="img-responsive"/><span class="tooltiptext1">What's New</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+        <!---Who is a Biller container--->
+        <div id="who-is-biller" style="display:block;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+                        <div class="who-is-biller-heading">
+                            <span>
+                                Who is a Biller?
+                            </span>
+                        </div>
+                        <div class="who-is-biller-subtxt">
+                            <p>
+                                Billers are the service providers who collect payments from customers and participate in the BBPS through BBPOU.
+								<br/>The category of billers participating in BBPS will be specified from time to time.
+							</p>
+							
+                        </div>
+                        <br/>
+                    </div>
+
+					
+						<div class="col-xs-12 col-sm-12 col-md-12 benefit-adj biller-types-ht">
+                        <div class="why-bbps-benefits-heading  wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+                            <span>
+                                Types Of Billers
+                            </span>
+                        </div>
+						<div class="mode-adj wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;" data-wow-delay="0.5s">
+							<div class="col-xs-12 col-sm-6 col-md-4 benefits-last-div-adj">
+								<div class="benefits-bg">
+								<div class="row">
+									<img src="images/biller-online-mode.png">
+								</div>
+								<div class="row">
+									<span class="benefits-sub-head" style="text-transform: uppercase;">Online-Mode</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 1px solid #fff;">
+								<br/>
+								
+								<div class="row benefits-txt-bg1" style="text-align:left;">
+									<p class="benefits-txt">
+										When Biller is connected online to respective BBPOU and all the communications between Biller and BBPOU is happening on real-time basis. At the time of fetching the bill, BBPOU will pass the required information to the biller and get the response on real time.  
+										BBPOU will confirm the bill payment only after getting confirmation from respective biller.
+									</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="mode-adj wow fadeIn" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;" data-wow-delay="0.5s">
+							<div class="col-xs-12 col-sm-6 col-md-4 benefits-last-div-adj">
+								<div class="benefits-bg">
+								<div class="row">
+									<img src="images/biller-online-mode-a.png">
+								</div>
+								<div class="row">
+									<span class="benefits-sub-head" style="text-transform: uppercase;">Offline-Mode(A)</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 1px solid #fff;">
+								<br/>
+								
+								<div class="row benefits-txt-bg2" style="text-align:left;">
+									<p class="benefits-txt">
+										When the biller is not connected to the BBPOU on real time basis and provides a file of expected bills on regular basis to respective OU.
+										BBPOU will confirm the bill payment on the basis of the bill information dump provided by the respective biller.
+									</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="mode-adj wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-wow-delay="0.5s">
+							<div class="col-xs-12 col-sm-6 col-md-4 benefits-last-div-adj tab-adj">
+								<div class="benefits-bg">
+								<div class="row">
+									<img src="images/biller-online-mode-b.png">
+								</div>
+								<div class="row">
+									<span class="benefits-sub-head" style="text-transform: uppercase;">Offline-Mode(B)</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 1px solid #fff;">
+								<br/>
+								
+								<div class="row benefits-txt-bg3" style="text-align:left;">
+									<p class="benefits-txt">
+										When the biller is neither connected to the BBPOU on real time basis nor provides any file. 
+										In this scenario, the BBPOU receives all the bill payment requests for that particular biller without any validation.
+									</p>
+								</div>
+								</div>
+							</div>
+						</div>
+                        <br/>
+                    </div>
+                </div> 
+				<div class="row"> 
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="page_links  wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+							<span>
+								<a href="whoisbbpou.html">What is a BBPOU? Click here to read >></a>
+							</span>
+						</div>
+					</div>   
+				</div>
+            </div>
+        </div>
+        <!---Who is a Biller container end--->
+		
+		<!---biller-categories container start-------->
+		<div id="biller-categories" style="display:none;">
+            <div class="container-fluid">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="who-is-biller-heading animated fadeInUp">
+						<span>
+							Categories of Billers
+						</span>
+					</div>
+					<br/>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="row visible-sm visible-md visible-lg">
+						<div class="col-xs-8 col-sm-4 col-md-3 col-sm-offset-1 col-md-offset-2 col-lg-3 col-lg-offset-1" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;" data-wow-delay="0.9s">
+							<div class="biller-existing-categories animated fadeInLeft">
+								<span>Existing Categories</span>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-3 col-lg-3 col-lg-offset-4">
+							<div class="biller-emerging-categories animated fadeInRight">
+								<span>Emerging Categories</span>
+							</div>
+						</div>
+					</div>
+					<div class="row visible-xs">
+						<div class="col-xs-12 animated fadeInUp">
+							<div class="biller-existing-categories">
+								<span>Existing Categories</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-0">
+						<div class="category_sub_head_utility  animated fadeInLeft">
+							<span>utility bills</span>
+						</div>
+						<br/>
+						<div class="img-div-bg animated fadeInLeft">
+							<div>
+								<div class="main-img-adj" style="padding-top:20px;">
+									<img src="images/biller_elecrticity.png" alt="">
+								</div>
+								<div class="img-heading">
+									<span>Electricity</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_water.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Water</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_gas.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Gas Supply</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_telephpne.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Telephone</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_dth.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>DTH Recharge</span>
+								</div>
+								<br/>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-1">
+						<div class="category_sub_head_institution animated fadeInLeft">
+							<span>institution fees</span>
+						</div>
+						<br/>
+						<div class="img-div-bg animated fadeInLeft">
+							<div>
+								<div class="main-img-adj" style="padding-top:20px;">
+									<img src="images/biller_school_fees.png" alt="">
+								</div>
+								<div class="img-heading">
+									<span>School Fees</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_college_fees.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>College Fees</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_subscription_fees.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Subscription Fees</span>
+								</div>
+								<br/>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row visible-xs">
+						<div class="col-xs-12">
+							<div class="biller-emerging-categories animated fadeInUp">
+								<span>Emerging Categories</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2">
+						<div class="category_sub_head_others animated fadeInRight">
+							<span>others</span>
+						</div>
+						<br/>
+						<div class="img-div-bg animated fadeInRight">
+							<div>
+								<div class="main-img-adj" style="padding-top:20px;">
+									<img src="images/biller_insurance.png" alt="">
+								</div>
+								<div class="img-heading">
+									<span>Insurance</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_mutual_funds.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Mutual Funds</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_taxes.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Taxes</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_credit_card.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Credit Card Bill Payments</span>
+								</div>
+								<br/>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-1">
+						<div class="category_sub_head_future animated fadeInRight">
+							<span>future additions</span>
+						</div>
+						<br/>
+						<div class="img-div-bg animated fadeInRight">
+							<div>
+								<div class="main-img-adj" style="padding-top:20px;">
+									<img src="images/biller_govt_payment.png" alt="">
+								</div>
+								<div class="img-heading">
+									<span>Govt. Payments</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_charity.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Charity</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_one_time_payments.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>One-time Payments</span>
+								</div>
+								<br/>
+								<hr style="margin:0px 20px; border-top: 2px solid #afb0b0;">
+							</div>
+							<div>
+								<div class="main-img-adj">
+									<img src="images/biller_others.png" alt="">
+								</div>
+								
+								<div class="img-heading">
+									<span>Others</span>
+								</div>
+								<br/>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="page_links animated fadeIn">
+						<span>
+							<a href="#benefits">Discover how you can benefit from being a biller >></a>
+						</span>
+					</div>
+				</div>   
+			</div>
+		</div>
+		<!---biller-categories container end--->
+					
+		<!---benefits container start-------->
+		<div id="benefits" style="display:none;">
+            <div class="container-fluid benefits-to-biller">
+				<div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+                        <div class="who-is-biller-heading">
+                            <span>
+                                Benefits To The Biller
+                            </span>
+							<br/>
+                        </div>
+						<p style="font-size:20px; text-align:center;">
+                                As a BBPS Biller, Enjoy Easier Integration
+							</p>
+                        <br/>
+                    </div>
+                    <div class="row ben_1">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;" data-wow-delay="0.5s">
+                            <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_lower_capex.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_1 xs-adjs xs360adj">
+                                            <span>Lower Capex and Opex due to reduced investments.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+						</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-wow-delay="0.5s">
+                             <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_wider_reach.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_1">
+                                            <span>Wider reach through different channels.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row ben_2">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;" data-wow-delay="0.5s">
+                            <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_improved_liquidity.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_1">
+                                            <span>Improved liquidity position due to faster payment collection.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-wow-delay="0.5s">
+                             <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_no_need_integrate.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_1">
+                                            <span>No need to integrate with multiple BBPOUs.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="row ben_2">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;" data-wow-delay="0.5s">
+                            <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_low_entre_barriers.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_1 xs-adjs xs360adj">
+                                            <span>Low entry barriers for small billers or ones confined to small geographies.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+						</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-wow-delay="0.5s">
+                             <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_garentee_of_payment.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_3">
+                                            <span>BBPS guarantees payment information and multiple
+													settlement of payment transactions at designated
+													intervals through authorized entities. This ensures that
+													there is no separate need for bank guarantees.
+											</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ben_adj">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;" data-wow-delay="0.5s">
+                            <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_cms_dms.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_2 xs-adjs xs360adj">
+                                            <span>Ensure a responsive grievance redressal system
+													(CMS and DMS) that will make the system more
+													responsive and gradually error free.
+											</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-wow-delay="0.5s">
+                            <div class="agent-grey-box">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-2 col-lg-1">
+                                        <div class="agent-grey-box-img">
+                                            <img src="images/biller_technical_mis.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-11">
+                                        <div class="grey-box-txt_2 xs-adjs xs360adj">
+                                            <span>Sufficient business and technical MIS that may help in
+												analyzing consumer behavior and system performance
+												of biller partners.
+											</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+						</div>
+                    </div>
+                </div>
+				<div class="row"> 
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="page_links wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+							<span>
+								<a href="contact.html">Would like to become a biller with BBPS, click here >></a>
+							</span>
+						</div>
+					</div>   
+				</div>
+			</div>
+		<!--roles and resp start-->
+			<div id="roles-responsibilities" style="display:none">
+			<div class="container-fluid biller-role-respo">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 benefit-adj  wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+                        <div class="why-bbps-benefits-heading">
+                            <span>
+                               Roles & Responsiblities
+                            </span>
+                        </div>
+						<p style="font-size:20px; text-align:center;" class="sbtxt_adj">
+							Biller has to ensure and perform the following:
+						</p>
+					</div>
+				</div>
+				<div class="row p_adj">
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 benefit-adj wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft; padding-bottom:20px;" data-wow-delay="0.5s">
+						<div class="iconDetails iconDetails-adj1">
+							<img src="images/biller_role_agreement.png" >
+						</div>
+						<div class="role-text-blog role-text-blog-one">
+							<span style="text-transform:uppercase">Agreement with Biller OU</span>
+							<p style="color:#fff;">Ensure that an agreement is put in place with the Biller OU appointing it as a default operating unit. </p>
+							
+						</div>
+					</div>
+					<div class=" col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight; padding-bottom:20px;" data-wow-delay="0.5s">
+						<div class="iconDetails iconDetails-adj2">
+						<img src="images/biller_role_secure.png" >
+						</div>
+						<div class="role-text-blog role-text-blog-two">
+							<span style="text-transform:uppercase">Secure channel for communication</span>
+							<p style="color:#fff;">Ensure that the communication between the BBPOU and Biller happens over a secure channel.<br></p>
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft; padding-bottom:20px;" data-wow-delay="0.5s">
+						<img src="images/biller_role_update.png" class="iconDetails iconDetails-adj3">
+						<div class="role-text-blog role-text-blog-three">
+							<span style="text-transform:uppercase;">Update consumer account</span>
+							<p style="color:#fff;">Online Billers must update the consumers account on a real time basis. On receiving receipt of payment, success message should be received from Biller OU.</p>
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight; padding-bottom:20px;" data-wow-delay="0.5s">
+						<img src="images/biller_role_share_bill.png" class="iconDetails iconDetails-adj4">
+						<div class="role-text-blog role-text-blog-four">
+							<span style="text-transform:uppercase;">Share bill information</span>
+							<p style="color:#fff;">For offline, it is suggested that the bill information is shared with the Biller OU at regular intervals.</p>
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft; padding-bottom:20px;" data-wow-delay="0.5s">
+						<img src="images/biller_role_send_alert.png" class="iconDetails iconDetails-adj5">
+						<div class="role-text-blog role-text-blog-five">
+							<span style="text-transform:uppercase;">Send alerts</span>
+							<p style="color:#fff;">For Billers where bills are paid without fetch, there may be cases where the payments cannot be accounted for any refund requests originating from the customer BBPOU must be promptly responded to.</p>
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight; padding-bottom:20px;" data-wow-delay="0.5s">
+						<img src="images/biller_role_recouncile.png" class="iconDetails iconDetails-adj6">
+						<div class="role-text-blog role-text-blog-six">
+							<span style="text-transform:uppercase;">Reconcile the funds</span>
+							<p style="color:#fff;">Billers must reconcile the funds remitted by the Biller OU on a daily basis.</p>
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft; padding-bottom:20px;" data-wow-delay="0.5s">
+						<img src="images/biller_role_disput_management.png" class="iconDetails iconDetails-adj7">
+						<div class="role-text-blog role-text-blog-seven">
+							<span style="text-transform:uppercase;">Dispute management</span>
+							<p style="color:#fff;">Billers must work with Biller OU to resolve the complaints and disputes within the prescribed TATs.</p>
+						</div>
+					</div>
+					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight; padding-bottom:20px;" data-wow-delay="0.5s">
+						<img src="images/biller_role_handel.png" class="iconDetails iconDetails-adj8">
+						<div class="role-text-blog role-text-blog-eight">
+							<span style="text-transform:uppercase;">Handle refund cases</span>
+							<p style="color:#fff;">All eligible refund cases must be processed immediately.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="page_links wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+						<span>
+							<a href="customer.html#how-to-pay-bill">Find out how bill payments take place in BBPS >></a>
+						</span>
+					</div>
+				</div>   
+			</div>
+		</div>
+		<!--roles and resp end-->
+		<!--standard starts-->
+		<div id="standards" style="display:none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-wow-delay="0.5s">
+							<div class="biller-std-heading">
+								<span>
+									Standards
+								</span>
+							</div>
+							<div class="biller-std-subtxt">
+								<p>
+									In the event of the Biller OU or the Biller withdrawing from the BBPS system, the biller must
+									continue to offer the bill payment services in a specified period as prescribed from time to time.
+									Biller must close the outstanding complaints, disputes and process all eligible refunds before
+									withdrawal from the system.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 wow fadeInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft; padding-bottom:20px;" data-wow-delay="0.5s">
+						<div class="iconDetails">
+							<img src="images/biller_std_bill.png" >
+						</div>
+						<div class="role-text-blog role-text-std-bill">
+							<span style="text-transform:uppercase">Agreement with Biller OU</span>
+							<p style="color:#fff;">The Biller should also designate and conclude agreements with back up Biller OU for the sake of business continuity and to ensure continued operations in case the default biller operating unit fails to perform or needs to be changed for some reason.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-8 col-md-offset-2 wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight; padding-bottom:20px;" data-wow-delay="0.5s">
+						<div class="iconDetails">
+							<img src="images/biller_std_home.png" >
+						</div>
+						<div class="role-text-blog role-text-std-home">
+							<span style="text-transform:uppercase">Agreement with Biller OU</span>
+							<p style="color:#fff;">The biller should also insist upon an agreement that a Non-Bank Biller OU will conclude with a sponsor bank indicating the procedure of settlement, designated account for settlement and the guarantee of settlement by the bank.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="page_links wow zoomIn animated" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;" data-wow-delay="0.5s">
+						<span>
+							<a href="faqs.html/#biller_faqs">Have more queries? Check out commonly asked questions >></a>
+						</span>
+					</div>
+				</div>   
+			</div>
+		</div>
+		<!--standard end-->
+        <!--footer animation div start-->
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer_text">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                        <ul class="list-inline footer-nav-links">
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                            <li><a href="privacyAndSecurityPolicy.html">Privacy And Security Policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Site Map</a></li> 
+                        </ul>
+                        <div ><a href="copyrights.html" style="text-decoration:none;cursor:pointer;">Copyright&copy;</a> 2016 by Bharat Bill Payment System, National Payments Corporation of India. All rights reserved.</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 footer_icon">
+                        <span class="footer-links">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.npci.org.in/" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;NPCI</a></li>
+                                <li><a href="https://www.rbi.org.in/" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;RBI</a></li>
+                                <li><a href="WhoIsBbpou.html" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;BBPOU</a></li>
+                                <li id="top-btn">Back to top  &nbsp;<img src="images/arrow_02.png" alt=""></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--end of footer-->
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/comman.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+		<script src="js/wow.min.js"></script>
+		
+		<script>
+			// for animation effect
+				new WOW().init();
+				
+				
+$(function(){
+                
+	//default open tab 
+	$('#who-is-biller').css('display','block');
+
+		$('#li_1').addClass('active1');
+	   $('#li_2').removeClass('active1');
+	   $('#li_3').removeClass('active1');
+	   $('#li_4').removeClass('active1');
+	   $('#li_5').removeClass('active1');
+	   $('#li_6').removeClass('active1');
+	   
+	   $('#li_custom_1').addClass('active1');
+	   $('#li_custom_2').removeClass('active1');
+	   $('#li_custom_3').removeClass('active1');
+	   $('#li_custom_4').removeClass('active1');
+	   $('#li_custom_5').removeClass('active1');
+	   $('#li_custom_6').removeClass('active1'); 
+	   
+	$("a[href$='#who-is-biller']").click(function(){
+		$('#who-is-biller').css('display','block');
+		$('#biller-categories').css('display','none');
+		$('#benefits').css('display','none');
+		$('#roles-responsibilities').css('display','none');
+		$('#standards').css('display','none'); 
+		$('#biller-store').css('display','none');
+		
+		$('#li_1').addClass('active1');
+	   $('#li_2').removeClass('active1');
+	   $('#li_3').removeClass('active1');
+	   $('#li_4').removeClass('active1');
+	   $('#li_5').removeClass('active1');
+	   $('#li_6').removeClass('active1');
+	   
+	   $('#li_custom_1').addClass('active1');
+	   $('#li_custom_2').removeClass('active1');
+	   $('#li_custom_3').removeClass('active1');
+	   $('#li_custom_4').removeClass('active1');
+	   $('#li_custom_5').removeClass('active1');
+	   $('#li_custom_6').removeClass('active1'); 
+	   
+	});
+	
+	$("a[href$='#biller-categories']").click(function(){
+		$('#who-is-biller').css('display','none');
+		$('#biller-categories').css('display','block');
+		$('#benefits').css('display','none');
+		$('#roles-responsibilities').css('display','none');
+		$('#standards').css('display','none'); 
+		$('#biller-store').css('display','none');
+		
+	   $('#li_1').removeClass('active1');
+	   $('#li_2').addClass('active1');
+	   $('#li_3').removeClass('active1');
+	   $('#li_4').removeClass('active1');
+	   $('#li_5').removeClass('active1');
+	   $('#li_6').removeClass('active1');
+	   
+	   $('#li_custom_1').removeClass('active1');
+	   $('#li_custom_2').addClass('active1');
+	   $('#li_custom_3').removeClass('active1');
+	   $('#li_custom_4').removeClass('active1');
+	   $('#li_custom_5').removeClass('active1');
+	   $('#li_custom_6').removeClass('active1'); 
+	});
+	
+	$("a[href$='#benefits']").click(function(){
+		$('#who-is-biller').css('display','none');
+		$('#biller-categories').css('display','none');
+		$('#benefits').css('display','block');
+		$('#roles-responsibilities').css('display','none');
+		$('#standards').css('display','none'); 
+		$('#biller-store').css('display','none');
+		
+	   $('#li_1').removeClass('active1');
+	   $('#li_2').removeClass('active1');
+	   $('#li_3').addClass('active1');
+	   $('#li_4').removeClass('active1');
+	   $('#li_5').removeClass('active1');
+	   $('#li_6').removeClass('active1');
+	   
+	   $('#li_custom_1').removeClass('active1');
+	   $('#li_custom_2').removeClass('active1');
+	   $('#li_custom_3').addClass('active1');
+	   $('#li_custom_4').removeClass('active1');
+	   $('#li_custom_5').removeClass('active1');
+	   $('#li_custom_6').removeClass('active1'); 
+		
+	});
+	
+	$("a[href$='#roles-responsibilities']").click(function(){
+		$('#who-is-biller').css('display','none');
+		$('#biller-categories').css('display','none');
+		$('#benefits').css('display','none');
+		$('#roles-responsibilities').css('display','block');
+		$('#standards').css('display','none'); 
+		$('#biller-store').css('display','none');
+		
+		$('#li_1').removeClass('active1');
+	   $('#li_2').removeClass('active1');
+	   $('#li_3').removeClass('active1');
+	   $('#li_4').addClass('active1');
+	   $('#li_5').removeClass('active1');
+	   $('#li_6').removeClass('active1');
+	   
+	   $('#li_custom_1').removeClass('active1');
+	   $('#li_custom_2').removeClass('active1');
+	   $('#li_custom_3').removeClass('active1');
+	   $('#li_custom_4').addClass('active1');
+	   $('#li_custom_5').removeClass('active1');
+	   $('#li_custom_6').removeClass('active1'); 
+	});
+	
+	$("a[href$='#standards']").click(function(){
+		$('#who-is-biller').css('display','none');
+		$('#biller-categories').css('display','none');
+		$('#benefits').css('display','none');
+		$('#roles-responsibilities').css('display','none');
+		$('#standards').css('display','block'); 
+		$('#biller-store').css('display','none');
+		
+		$('#li_1').removeClass('active1');
+	   $('#li_2').removeClass('active1');
+	   $('#li_3').removeClass('active1');
+	   $('#li_4').removeClass('active1');
+	   $('#li_5').addClass('active1');
+	   $('#li_6').removeClass('active1');
+	   
+	   $('#li_custom_1').removeClass('active1');
+	   $('#li_custom_2').removeClass('active1');
+	   $('#li_custom_3').removeClass('active1');
+	   $('#li_custom_4').removeClass('active1');
+	   $('#li_custom_5').addClass('active1');
+	   $('#li_custom_6').removeClass('active1');
+	});
+	
+	$("a[href$='#biller-store']").click(function(){
+		$('#who-is-biller').css('display','none');
+		$('#biller-categories').css('display','none');
+		$('#benefits').css('display','none');
+		$('#roles-responsibilities').css('display','none');
+		$('#standards').css('display','none'); 
+		$('#biller-store').css('display','block'); 
+		
+		$('#li_1').removeClass('active1');
+	   $('#li_2').removeClass('active1');
+	   $('#li_3').removeClass('active1');
+	   $('#li_4').removeClass('active1');
+	   $('#li_5').removeClass('active1');
+	   $('#li_6').addClass('active1');
+	   
+	   $('#li_custom_1').removeClass('active1');
+	   $('#li_custom_2').removeClass('active1');
+	   $('#li_custom_3').removeClass('active1');
+	   $('#li_custom_4').removeClass('active1');
+	   $('#li_custom_5').removeClass('active1');
+	   $('#li_custom_6').addClass('active1');
+	});
+	
+	
+	  
+});
+		</script>
+    </body>
+</html>

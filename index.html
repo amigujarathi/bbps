@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BBPS | Homepage</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/biller.css">
+        <!-------IE Support Javascript for Bootstrap--------->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		
+		<style>
+			.dropdown-menu li a{
+				display:block;
+				text-decoration: none;
+				color: #1a3281;
+			}  
+			.dropdown-menu li a:hover{
+				color: #f67923 !important;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="main-header">
+        <div id="go-to-position"></div>
+        <div id="go-to-section" class="">
+            <ul>
+                <li><a href="#go-to-bbps-manage"></a><span class="callout2" style="display: none;">BBPS Manage Bills</span></li>
+                <li><a href="#go-to-bbps-partner"></a><span class="callout2" style="display: none;">BBPS Partners</span></li>
+                <li><a href="#go-to-bbps-billers"></a><span class="callout" style="display: none;">BBPS &nbsp; &nbsp; &nbsp Billers</span></li>
+                <li><a href="#go-to-bbps-customer"></a><span class="callout" style="display: none;">BBPS Customers</span></li>
+            </ul>
+        </div>
+        
+        <div class="row social-header">
+            <ul class="list-inline pull-right">
+                <li><i class="fa fa-facebook social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin social-color" aria-hidden="true"></i></li>
+            </ul>
+        </div> 
+<!--head  -->
+        <div class="container-fluid" id="headtop">
+            <div class="row second-header visible-sm-* visible-md-* visible-lg-* hidden-xs">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a class="brand_img_adjust" href="index.html"><img class="img-responsive brand_img" src="images/BBPS_LOGO.png" alt="BBPS">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 sub-header-icons">
+                    <ul class="list-inline pull-right">
+                        <li class="round-circle"><a href="index.html"><img class="" src="images/small_icon/home2.png"></a></li>
+                        <li><a href="index.html"><label class="second-header-label hidden-xs ">Home</label></a></li>
+                        <li class="round-circle"><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><img class="" src="images/small_icon/mail-us2.png"></a></li>
+                        <li><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><label class="second-header-label hidden-xs ">Mail Us</label></a></li>
+                        <li class="round-circle"><a href="contact.html"><img class="" src="images/small_icon/contact2.png"></a></li>
+                        <li><a href="contact.html"><label class="second-header-label hidden-xs ">Contact Us</label></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 visible-sm-* visible-md-* visible-lg-*">
+                    <a class="brand_img_adjust pull-right" href="http://www.npci.org.in/" target="_blank">
+                        <img class="img-responsive brand_img left-brand-img-adjust" src="images/NPCI_LOGO.jpg" alt="BBPS" >
+                    </a>
+                </div>
+            </div>
+            <div class="row second-header hidden-sm-* hidden-md-* hidden-lg-* visible-xs">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <center>
+                        <a class="brand_img_adjust" href="index.html"><img class="img-responsive brand_img" src="images/BBPS_LOGO.png" alt="BBPS">
+                        </a>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <center>
+                        <ul class="list-inline">
+                            <li class="round-circle"><a href="index.html"><img class="" src="images/small_icon/home2.png"></a></li>
+                            <li><a href="index.html"><label class="second-header-label  hidden-xs">Home</label></a></li>
+                            <li class="round-circle"><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><img class="" src="images/small_icon/mail-us2.png"></a></li>
+                            <li><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><label class="second-header-label  hidden-xs">Mail Us</label></a></li>
+                            <li class="round-circle"><a href="contact.html"><img class="" src="images/small_icon/contact2.png"></a></li>
+                            <li><a href="contact.html"><label class="second-header-label  hidden-xs">Contact Us</label></a></li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 visible-sm-* visible-md-* visible-lg-*">
+                    <center>
+                        <a class="brand_img_adjust" href="http://www.npci.org.in/" target="_blank">
+                            <img class="img-responsive brand_img" src="images/NPCI_LOGO.jpg" alt="BBPS" >
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <!--head  -->
+            <!--navbar  -->
+            <nav class="navbar navbar-default nav_color" role="navigation">
+                <div class="container-fluid">
+                    <!--     Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<a class="navbar-brand" href="#">Brand</a>-->
+                    </div>
+
+                    <!--Collect the nav links, forms, and other content for toggling--> 
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav main_nav">
+                            <!--                                <li ><a class="navbar_li" href="#">HOME</a></li>-->
+                            <li ><a class="navbar_li" href="aboutus.html">ABOUT US</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle navbar_li" href="#">PARTNER</a>
+							<ul class="dropdown-menu dp-adj">
+								<li><a href="whoisbbpou.html">BBPOU</a></li>
+								<li><a href="AgentInstitution.html">Agent Institution</a></li>
+								<li><a href="WhoIsAnAgentAndBenefits.html">Agent</a></li>
+							</ul>
+						</li>
+                            <li ><a class="navbar_li" href="biller.html">BILLER</a></li>
+                            <li ><a class="navbar_li" href="customer.html">CUSTOMER</a></li>
+                            <li ><a class="navbar_li" href="WhatsNew.html">WHAT'S NEW</a></li>
+							<li ><a class="navbar_li" href="library.html">LIBRARY</a></li>
+                            <li><a class="navbar_last" href="faqs.html">FAQs</a></li>
+                        </ul>
+                        <div class="col-xs-12 col-sm-6 col-md-3 pull-right visible-lg-* hidden-xs hidden-sm hidden-md">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="inputValidation" placeholder="Search here..."/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default search-btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                    <!--<span class="glyphicon glyphicon-search form-control-feedback" style="color:#fff;"></span>-->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+            <!--navbar  -->
+             <!--carousel  -->
+            <div class="">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner  " role="listbox">
+                        <div class="item active">
+                            <img class="desktop_slide" src="images/Banner_01.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="desktop_slide" src="images/Banner_02.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="desktop_slide" src="images/Banner_03.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+						<div class="item">
+                            <img class="desktop_slide" src="images/Banner_04.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="desktop_slide" src="images/Banner_05.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+		</div>
+		<!--<div class="article-sticky-stuff" id="sticky">
+			<div class="sticky-shares-wrap">
+				<div class="float-icon visible-sm visible-md visible-lg" style="margin-top:0px;">
+					<ul class="list-group">
+						<li class="list-group-item">
+						<a href="library.html" class="tooltip1"><img src="images/Libraries-icon.png" alt="#" class="img-responsive "/> <span class="tooltiptext1">Library</span></a>
+						
+						</li>
+						<li class="list-group-item"><a href="faqs.html" class="tooltip1"><img src="images/faqs-icon.png" alt="#" class="img-responsive"/><span class="tooltiptext1">FAQ</span></a></li>
+					</ul>
+				</div>
+				<div class="float-icon visible-xs" style="margin-top:0px;">
+					<ul class="list-group">
+						<li class="list-group-item">
+						<a href="library.html" class="tooltip1"><img src="images/Libraries-icon-mob.png" alt="#" class="img-responsive"/><span class="tooltiptext1">Library</span></a>
+						</li>
+						<li class="list-group-item"><a href="faqs.html" class="tooltip1"><img src="images/faqs-icon-mob.png" alt="#" class="img-responsive"/><span class="tooltiptext1">FAQ</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>-->
+             <!--carousel  -->
+            <!--end of desktop navbar-->
+            <!--first blog-->
+            <div class="container-fluid" id="go-to-bbps-manage">
+                <div class="row blk_top">
+                    <div class="col-xs-12 col-sm-6 col-md-6 first_block">
+                        <div class="row ">
+                            <div class="col-md-11 animateblock left">
+                                <div class="block_heading">
+                                    <div class="first_block_heading first-system-india">
+                                        BBPS... the better way to manage bills! 
+                                    </div>
+                                </div>
+                                <div class='text_size'>
+                                    <p class="first-system-india"> 
+                                        The first of its kind bill payment system in India is here to change the way bills are paid. Bringing a revolution in India's bill payment market, BBPS enables every citizen to pay their different bills under the same window. This unified platform brings banks, ecommerce portals and online payment platforms under one roof as its official operational units for bill collections. 
+                                    </p>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="aboutus.html" style="cursor:pointer"><img class="img-responsive img_btn" src="images/small_icon/read_more_btn.png" ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 bbps-manage-block-adjust ">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12 second_block ">
+                                    <center><img class="img-responsive animateblock right" src="images/paybill.png"></center>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 second_block">
+                                    <center><img class="img-responsive animateblock right" src="images/bill_all.png"></center>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12 second_block">
+                                    <center><img class="img-responsive animateblock right" src="images/safe_reliable.png"></center>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 second_block">
+                                    <center><img class="img-responsive animateblock right" src="images/pan.png"></center>
+                                </div>
+                            </div>
+                       </div> 
+                    </div>
+                </div>
+            </div> 
+            <!--end of first blog-->
+            <!--second blog-->
+            <div class="img_block block" id="go-to-bbps-partner">
+                <div class="row">
+                    <div class="col-sm-5 col-sm-push-7 col-md-5 img_block">
+                        <div class="container-fluid ">
+                            <div class="animateblock right img_partner"><img class="img-responsive" src="images/BBPS_Partners.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-sm-pull-5 col-md-7 img_block block-partener-align"> 
+                        <div class="row">
+                            <div class="col-md-offset-2 col-md-9 ">
+                                <div class="row block_padding">
+
+                                    <div class="col-md-10 img_block animateblock left">
+                                        <div class="block1_padding">
+                                            <div class="block_footer">BBPS PARTNERS</div><span class='block_title'>Easy for you and your customers!</span>
+                                            <div class='text_size' style="margin-top: 10px;">
+                                                <p >
+                                                    Once you get listed as an authorized BBPS partner, your customers will enjoy the ease of hassle-free bill payments. Also, it's a great opportunity for you to enhance your customer's trust. BBPS allows you to build healthy customer relationships, and leverages your business network. 
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <a href="WhoIsBbpou.html" style="cursor:pointer"><img class="img-responsive img_btn" src="images/small_icon/read_more_btn.png" ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of second blog-->
+            <!--third blog-->
+            <div class="container-fluid" id="go-to-bbps-billers">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 billers_img">
+                        <div class="block2_img">
+                            <div class="animateblock left img-biller"><img class="img-responsive " src="images/BBPS_Billers.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="row block_padding2">
+
+                            <div class="col-md-10 block2_section animateblock right">
+                                <div class="block1_padding padding_mobile">
+                                    <div class="block_footer">BILLERS</div><div class='block_title'>Enjoy easier integration!</div>
+                                    <div class='text_size'><p>
+
+                                            No more chasing after bills. With BBPS, you can collect your bills fast and keep track of all payments. It offers a wider reach through different channels of payment and helps you earn your customer's trust. 
+
+                                        </p></div>
+                                    <div>
+                                        <a href="biller.html" style="cursor:pointer"><img class="img-responsive img_btn" src="images/small_icon/read_more_btn.png" ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of third blog-->
+            <!--fourth blog-->
+            <div class="img_block" id="go-to-bbps-customer">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-5 img_block">
+                        <div class="container-fluid ">
+                            <div class="animateblock right img-customer"><img class="img-responsive" src="images/User_Customer.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-7 img_block block-customer-padding"> 
+                        <div class="row">
+                            <div class="col-md-offset-2 col-md-9 ">
+                                <div class="row block_padding"> 
+                                    <div class="col-md-10 img_block animateblock left">
+                                        <div class="block1_padding">
+                                            <div class="block_footer">CUSTOMERS</div><div class='block_title'>Managing bills get better with BBPS!</div>
+                                            <div class='text_size'><p>
+                                                    Wherever you go, your bills will follow you. Pay anywhere, anytime across the country with great convenience and secure payments. No more queues or hassles of managing every bill separately. 
+                                                    It's you who decide how, when and where to pay. 
+                                                </p></div>
+                                            <div>
+                                                <a href="customer.html" style="cursor:pointer" ><img class="img-responsive img_btn" src="images/small_icon/read_more_btn.png" ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+            <!--end of fourth blog-->
+            <!--Start search block-->
+            <div class="container-fluid">
+                <div class='search_block'>
+                    <div class='row'>
+                        <div class='col-md-12'>
+                            <div class="search_block_heading"><center>How can BBPS help you?</center></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="form-group col-xs-12 col-sm-12  col-md-6 col-lg-6 bottom_search">
+                            <!--                            <div class="form-group has-feedback">
+                                                            <input type="text" class="form-control" id="inputValidation" placeholder="Got a question? Ask!"/>
+                                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                                        </div>-->
+                            <div class="searchbx_bottom">
+                                <form class="searchbox" action="">
+                                    <input class="input_search" type="search" placeholder="Got a question? Ask!" /> 
+                                    <img class="srch_btn" src="images/small_icon/search.png">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!--end of search block-->
+            <!--News section-->
+            <div class="img_block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12 header_text">NEWS</div>            
+                    </div>
+                    <div class="slider1">
+                        <div class="slide">
+                            <!--                        <div class="row">-->
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk1">
+                                    <div class="slider_block_1">
+                                        <div class="new_header_section">
+                                            News Heading
+                                        </div>
+                                        <br/>
+                                        <div class="news_desc">
+                                            <div class='heading_text_size'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ldsorem Ipsum has been the in dummy text. Ldsorem Ipsum has been Ipsum .</p></div>
+                                        </div>
+                                        <div class="read_more">Read More -></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk2">
+                                    <div class="day_month1">
+                                        <center>25 MAY</center>
+                                    </div>
+                                    <div class="news_img"><img class="img-responsive" src="images/slide1.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk1">
+                                    <div class="slider_block_1">
+                                        <div class="new_header_section">
+                                            News Heading
+                                        </div>
+                                        <br/>
+                                        <div class="news_desc">
+                                            <div class='heading_text_size'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ldsorem Ipsum has been the in dummy text. Ldsorem Ipsum has been Ipsum .</p></div>
+                                        </div>
+                                        <div class="read_more">Read More -></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk2">
+                                    <div class="day_month1">
+                                        <center>26 MAY</center>
+                                    </div>
+                                    <div class="news_img"><img class="img-responsive" src="images/slide2.png"></div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="slide">
+                            <!--                        <div class="row">-->
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk1">
+                                    <div class="slider_block_1">
+                                        <div class="new_header_section">
+                                            News Heading
+                                        </div>
+                                        <br/>
+                                        <div class="news_desc">
+                                            <div class='heading_text_size'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ldsorem Ipsum has been the in dummy text. Ldsorem Ipsum has been Ipsum .</p></div>
+                                        </div>
+                                        <div class="read_more">Read More -></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk2">
+                                    <div class="day_month1">
+                                        <center>27 MAY</center>
+                                    </div>
+                                    <div class="news_img"><img class="img-responsive" src="images/slide1.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk1">
+                                    <div class="slider_block_1">
+                                        <div class="new_header_section">
+                                            News Heading
+                                        </div>
+                                        <br/>
+                                        <div class="news_desc">
+                                            <div class='heading_text_size'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ldsorem Ipsum has been the in dummy text. Ldsorem Ipsum has been Ipsum .</p></div>
+                                        </div>
+                                        <div class="read_more">Read More -></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 blk2">
+                                    <div class="day_month1">
+                                        <center>28 MAY</center>
+                                    </div>
+                                    <div class="news_img"><img class="img-responsive" src="images/slide2.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <!--End of news section-->
+
+    <!--footer animation div start-->
+
+    <!--end of footer-->
+
+    <!--footer-->
+        <div class="footer">
+            <div class="container footer_text">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                        <ul class="list-inline footer-nav-links">
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                            <li><a href="privacyAndSecurityPolicy.html">Privacy And Security Policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Site Map</a></li> 
+                        </ul>
+                        <div ><a href="copyrights.html" style="text-decoration:none;cursor:pointer;">Copyright&copy;</a> 2016 by Bharat Bill Payment System, National Payments Corporation of India. All rights reserved.</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 footer_icon">
+                        <span class="footer-links">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.npci.org.in/" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;NPCI</a></li>
+                                <li><a href="https://www.rbi.org.in/" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;RBI</a></li>
+                                <li><a href="WhoIsBbpou.html" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;BBPOU</a></li>
+                                <li id="top-btn">Back to top  &nbsp;<img src="images/arrow_02.png" alt=""></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--end of footer-->
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<!--<script src="js/comman.js"></script>-->
+
+<script>
+$('ul.nav li.dropdown').hover(function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			}, function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			});
+</script>
+</body>
+</html>

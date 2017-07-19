@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BBPS | Library</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/faqs.css">
+		
+        <!-------IE Support Javascript for Bootstrap--------->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+            .active_menu{
+				color:#1a3281 !important;
+			}
+			.glyphicon {
+				border:0px !important;
+			}
+        </style>
+        
+        
+    </head>
+    <body>
+	<div id="main-header">
+        <div class="row social-header">
+            <ul class="list-inline pull-right">
+                <li><i class="fa fa-facebook social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram social-color" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin social-color" aria-hidden="true"></i></li>
+            </ul>
+        </div> 
+<!--head  -->
+        <div class="container-fluid" id="headtop">
+            <div class="row second-header visible-sm-* visible-md-* visible-lg-* hidden-xs">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a class="brand_img_adjust" href="index.html"><img class="img-responsive brand_img" src="images/BBPS_LOGO.png" alt="BBPS">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 sub-header-icons">
+                    <ul class="list-inline pull-right">
+                        <li class="round-circle"><a href="index.html"><img class="" src="images/small_icon/home2.png"></a></li>
+                        <li><a href="index.html"><label class="second-header-label hidden-xs ">Home</label></a></li>
+                        <li class="round-circle"><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><img class="" src="images/small_icon/mail-us2.png"></a></li>
+                        <li><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><label class="second-header-label hidden-xs ">Mail Us</label></a></li>
+                        <li class="round-circle"><a href="contact.html"><img class="" src="images/small_icon/contact2.png"></a></li>
+                        <li><a href="contact.html"><label class="second-header-label hidden-xs ">Contact Us</label></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 visible-sm-* visible-md-* visible-lg-*">
+                    <a class="brand_img_adjust pull-right" href="http://www.npci.org.in/" target="_blank">
+                        <img class="img-responsive brand_img left-brand-img-adjust" src="images/NPCI_LOGO.jpg" alt="BBPS" >
+                    </a>
+                </div>
+            </div>
+            <div class="row second-header hidden-sm-* hidden-md-* hidden-lg-* visible-xs">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <center>
+                        <a class="brand_img_adjust" href="index.html"><img class="img-responsive brand_img" src="images/BBPS_LOGO.png" alt="BBPS">
+                        </a>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <center>
+                        <ul class="list-inline">
+                            <li class="round-circle"><a href="index.html"><img class="" src="images/small_icon/home2.png"></a></li>
+                            <li><a href="index.html"><label class="second-header-label  hidden-xs">Home</label></a></li>
+                            <li class="round-circle"><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><img class="" src="images/small_icon/mail-us2.png"></a></li>
+                            <li><a href="mailto:bbps@npci.org.in?Subject=Contact from BBPS"><label class="second-header-label  hidden-xs">Mail Us</label></a></li>
+                            <li class="round-circle"><a href="contact.html"><img class="" src="images/small_icon/contact2.png"></a></li>
+                            <li><a href="contact.html"><label class="second-header-label  hidden-xs">Contact Us</label></a></li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 visible-sm-* visible-md-* visible-lg-*">
+                    <center>
+                        <a class="brand_img_adjust" href="http://www.npci.org.in/" target="_blank">
+                            <img class="img-responsive brand_img" src="images/NPCI_LOGO.jpg" alt="BBPS" >
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <!--head  -->
+        <!--navbar  -->
+        <nav class="navbar navbar-default nav_color" role="navigation">
+            <div class="container-fluid">
+                <!--     Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!--Collect the nav links, forms, and other content for toggling--> 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav main_nav">
+                        <!--                                <li ><a class="navbar_li" href="#">HOME</a></li>-->
+							<li ><a class="navbar_li" href="aboutus.html">ABOUT US</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle navbar_li" href="#" data-toggle="dropdown">PARTNER</a>
+							<ul class="dropdown-menu dp-adj">
+								<li><a href="whoisbbpou.html">BBPOU</a></li>
+								<li><a href="AgentInstitution.html">Agent Institution</a></li>
+								<li><a href="WhoIsAnAgentAndBenefits.html">Agent</a></li>
+								
+							</ul>
+						</li>
+                            <li ><a class="navbar_li" href="biller.html">BILLER</a></li>
+                            <li ><a class="navbar_li" href="customer.html">CUSTOMER</a></li>
+                            <li ><a class="navbar_li" href="WhatsNew.html">WHAT'S NEW</a></li>
+							<li ><a class="navbar_li active_menu" href="library.html">LIBRARY</a></li>
+                            <li><a class="navbar_last " href="faqs.html">FAQs</a></li>
+                    </ul>
+                    <div class="col-xs-12 col-sm-6 col-md-3 pull-right visible-lg-* hidden-xs hidden-sm hidden-md">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inputValidation" placeholder="Search here..."/>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default search-btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                                <!--<span class="glyphicon glyphicon-search form-control-feedback" style="color:#fff;"></span>-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </nav>
+        <!--navbar  -->
+		<div class="container-fluid faqs-banner-adj">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faqs-banner-adj">
+					<div class="faqs-banner-img">
+						<img src="images/bbps_aboutuspage_slide.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+        <div class="article-sticky-stuff" id="sticky">
+			<div class="sticky-shares-wrap">
+				<div class="float-icon visible-sm visible-md visible-lg" style="margin-top:0px;">
+					<ul class="list-group">
+						<li class="list-group-item">
+						<a href="library.html" class="tooltip1"><img src="images/Libraries-icon.png" alt="#" class="img-responsive "/> <span class="tooltiptext1">Library</span></a>
+						
+						</li>
+						<li class="list-group-item"><a href="WhatsNew.html" class="tooltip1"><img src="images/faqs-icon.png" alt="#" class="img-responsive"/><span class="tooltiptext1">What's New</span></a></li>
+					</ul>
+				</div>
+				<div class="float-icon visible-xs" style="margin-top:0px;">
+					<ul class="list-group">
+						<li class="list-group-item">
+						<a href="library.html" class="tooltip1"><img src="images/Libraries-icon-mob.png" alt="#" class="img-responsive"/><span class="tooltiptext1">Library</span></a>
+						</li>
+						<li class="list-group-item"><a href="WhatsNew.html" class="tooltip1"><img src="images/faqs-icon-mob.png" alt="#" class="img-responsive"/><span class="tooltiptext1">What's New</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+        <!--end of desktop navbar-->
+<div class="container demo"> 
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-head-border">
+			<span class="faq-head">Library</span>
+		</div>
+	</div>
+	<!-- general-group start -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">general</span>
+		</div>
+	</div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment System (BBPS)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Central Unit (BBPCU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Operating Unit (BBPOU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+    </div><!-- general-group end -->
+	
+	<!-- ABOUT US-group start -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">ABOUT US</span>
+		</div>
+	</div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment System (BBPS)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Central Unit (BBPCU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Operating Unit (BBPOU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+    </div><!-- ABOUT US-group end -->
+	
+		<!-- BBPOU-group start -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">BBPOU</span>
+		</div>
+	</div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment System (BBPS)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Central Unit (BBPCU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Operating Unit (BBPOU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+    </div><!-- BBPOU-group end -->
+	
+	<!-- agent-institution-group start -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">agent institution</span>
+		</div>
+	</div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment System (BBPS)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Central Unit (BBPCU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Operating Unit (BBPOU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+    </div><!-- agent-institution-group end -->
+	
+	<!-- agent-group start -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">agent</span>
+		</div>
+	</div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment System (BBPS)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Central Unit (BBPCU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is Bharat Bill Payment Operating Unit (BBPOU)?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+    </div><!-- agent-group end -->
+	<!-- PARTNER-group start
+    <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">PARTNER</span>
+		</div>
+	</div>
+	    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-four">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#four" aria-expanded="true" aria-controls="four">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Who should apply for authorisation to become BBPOUs?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-six">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#six" aria-expanded="false" aria-controls="six">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        How should net worth be computed for a non-bank entity? 
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-seven">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#seven" aria-expanded="false" aria-controls="seven">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is the application procedure for authorization for non-banks?
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-eight">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#eight" aria-expanded="false" aria-controls="eight">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What is the application procedure for banks to become BBPOUs? 
+                    </a>
+                </h4>
+            </div>
+
+        </div>
+		
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-ten">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#ten" aria-expanded="false" aria-controls="ten">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        If the entity does not fall under the present scope of BBPS, whether it is still required to apply for authorisation?  
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseEleven">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What will happen to the application when the entity meets all the eligibility criteria?  
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapsetwelve">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Whether an entity which has been granted extension will be required to inform RBI when they meet the eligibility criteria?   
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseFifteen">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Whether it is mandatory for banks to submit copy of the 'Board approval' while applying for approval to Reserve Bank?
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseSixteen">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Where can we get more details about the activities of BBPCU and BBPOU standards?
+                    </a>
+                </h4>
+            </div>
+        </div>
+    </div><!-- partner-group end -->
+	
+	<!-- BILLER-group start -->
+    <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">BILLER</span>
+		</div>
+	</div>
+	    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseSeventeen">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeventeen" aria-expanded="true" aria-controls="collapseSeventeen">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Will the BBPS guidelines apply to billers' own collection centers operated by BBPOUs?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseEighteen">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        How to register as a biller? 
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseNinteen">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseNinteen" aria-expanded="false" aria-controls="collapseNinteen">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Who all can register as a biller under BBPS? 
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseTwenty">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        How does BBPS benefit billers? 
+                    </a>
+                </h4>
+            </div>
+        </div>
+	</div>
+	
+		<!-- CUSTOMER-group start -->
+    <div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 faq-sub-head-adj">
+			<span class="faq-sub-head">CUSTOMER</span>
+		</div>
+	</div>
+	    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseTwentyone">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwentyone" aria-expanded="true" aria-controls="collapseTwentyone">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        Why should you pay bills with BBPS?
+                    </a>
+                </h4>
+            </div>
+
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseTwentyTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        How can a customer get registered?
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseTwentyThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What kind of bills can be paid with BBPS?
+                    </a>
+                </h4>
+            </div>
+            
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseTwentyFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        What are the available modes of payment?
+                    </a>
+                </h4>
+            </div>
+        </div>
+		
+		<div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="head-collapseTwentyFive">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
+                        <i class="more-less glyphicon glyphicon-save"></i>
+                        When will you get confirmation on your payments? 
+                    </a>
+                </h4>
+            </div>
+
+        </div>
+	</div>
+	<!---------------- customer end -------------->
+	
+</div><!-- container -->
+
+ <!--footer-->
+        <div class="footer">
+            <div class="container footer_text">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                        <ul class="list-inline footer-nav-links">
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                            <li><a href="privacyAndSecurityPolicy.html">Privacy And Security Policy</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Site Map</a></li> 
+                        </ul>
+                        <div ><a href="copyrights.html" style="text-decoration:none;cursor:pointer;">Copyright&copy;</a> 2016 by Bharat Bill Payment System, National Payments Corporation of India. All rights reserved.</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 footer_icon">
+                        <span class="footer-links">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.npci.org.in/" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;NPCI</a></li>
+                                <li><a href="https://www.rbi.org.in/" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;RBI</a></li>
+                                <li><a href="WhoIsBbpou.html" target="_blank"><img src="images/arrow_01.png" alt=""> &nbsp;BBPOU</a></li>
+                                <li id="top-btn">Back to top  &nbsp;<img src="images/arrow_02.png" alt=""></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--end of footer-->
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/comman.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			// for animation effect
+				new WOW().init();
+		</script>
+    </body>
+</html>

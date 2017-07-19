@@ -1,0 +1,398 @@
+
+
+.story-behind-adj{
+	margin-bottom: 50px;
+}
+.biller_new_txt{
+	text-align: center;
+    padding: 0 5% 3%;
+}
+.page_links{
+	margin: 3% 0;
+    text-align: center;
+}
+.page_links a{
+	color: #f67923;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip1 .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #193282;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 110%;
+}
+
+.tooltip1 .tooltiptext1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #193282;
+}
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+}
+
+@media only screen and (min-width : 1271px) and (max-width : 1360px){
+
+.grey-box-txt_2{
+	padding-top: 15px !important;
+}	
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+.agentinstitute-grey-box-txt-resp{
+	padding-top:13px !important;
+}
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 768px){
+
+.agent-grey-box{
+	margin-top: 6%;
+	border-top-left-radius: 2em !important;
+    border-bottom-left-radius: 2em !important;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: -27px !important;
+    margin-top: 0% !important;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+    padding-bottom: 20px;
+	text-align:left !important;
+}
+
+.xs-adjs{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+.ben_1 {
+    margin-top: 40px !important;
+}
+}
+
+}
+@media screen and (min-width: 800px) and (max-width: 800px) {
+.agent-grey-box{
+	margin-top: 6%;
+	border-top-left-radius: 2em !important;
+    border-bottom-left-radius: 2em !important;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: -27px !important;
+    margin-top: 0% !important;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+    padding-bottom: 20px;
+	text-align:left !important;
+}
+.xs-adjs{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+.ben_1 {
+    margin-top: 40px !important;
+}
+}
+
+@media only screen and (min-width: 491px) and (max-width: 570px) {
+    .aboutus-bbpcu-heading{
+		font-size:25px;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.currentmkt-channel2 img{
+	width:100% !important;
+}
+.agentinstitute-grey-box{
+	margin-top: 6%;
+	border-radius:0px;
+}
+.agentinstitute-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -6%;
+}
+.agentinstitute-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agentinstitute-grey-box-txt-resp{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agent-grey-box{
+	margin-top: 6%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -6%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+.ben_1 {
+    margin-top: 0px !important;
+}
+}
+
+@media screen and (min-width: 569px) and (max-width:599px) {
+.agent-grey-box{
+	margin-top: 6%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -6%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+}
+/* ============================================== */
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:568px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.currentmkt-channel2 img{
+	width:100% !important;
+}
+.agentinstitute-grey-box{
+	margin-top: 11%;
+	border-radius:0px;
+}
+.agentinstitute-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -11%;
+}
+.agentinstitute-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agentinstitute-grey-box-txt-resp{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agent-grey-box{
+	margin-top: 11%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -11%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.biller_new_txt{
+	text-align: center;
+    padding: 0 0% 3%;
+}
+}
+
+/* ============================================== */
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:480px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.currentmkt-channel2 img{
+	width:100% !important;
+}
+.agentinstitute-grey-box-txt-resp{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agentinstitute-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.biller_new_txt{
+	text-align: center;
+    padding: 0 0% 3%;
+}
+.agentinstitute-grey-box{
+	border-radius:0px;
+	margin-top: 13%;
+}
+.agentinstitute-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -13%;
+}
+
+.agent-grey-box{
+	margin-top: 20%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -13%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 13px;
+	text-align:center;
+}
+.ben_1 {
+    margin-top: 0px !important;
+}
+}
+
+/* ============================================== */
+/* iPhone4/Android portrait               320x480 */
+/* iPhone5 portrait                       320x568 */
+/* ============================================== */
+@media screen and (max-width:320px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.currentmkt-channel2 img{
+	width:100% !important;
+}
+
+.biller_new_txt{
+	text-align: center;
+    padding: 0 0% 3%;
+}
+.page_links a{
+	font-size:16px;
+}
+
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+/* ============================================== */
+@media screen and (min-width:240px) and (max-width:320px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.currentmkt-channel2 img{
+	width:100% !important;
+}
+
+.biller_new_txt{
+	text-align: center;
+    padding: 0 0% 3%;
+}
+
+.agentinstitute-grey-box{
+	margin-top: 20%;
+	border-radius:0px;
+}
+.agentinstitute-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.agentinstitute-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agentinstitute-grey-box-txt-resp{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+.agent-grey-box{
+	margin-top: 20%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px !important;
+	padding-left: 10px;
+    padding-bottom: 20px;
+	text-align:left !important;
+}
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+/* ============================================== */
+@media screen and (max-width:240px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.currentmkt-channel2 img{
+	width:100% !important;
+}
+.agentinstitute-grey-box-txt-resp{
+	padding-top: 0px !important;
+}
+}

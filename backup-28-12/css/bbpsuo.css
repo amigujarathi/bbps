@@ -1,0 +1,901 @@
+/* ================================================ */
+/* Responsive - Media queries                       */
+/* Based on:                                        */
+/* http://lab.maltewassermann.com/viewport-resizer/ */
+/* ================================================ */
+
+
+.bullets{
+	margin-top: 29px;
+	background-color: #242d72;
+	margin-left: 37%;
+	border-radius: 56%;
+	height: 45px;
+	width: 45px;
+	text-align: center;
+	padding: 4px;
+}
+.bullets span{
+	font-size:20pt;
+	color:#fff;
+}
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+  
+	border-left: 10px solid #f47920;
+	position: absolute;
+	margin-left: 126%;
+	margin-top: 40px;
+}
+#bbpouprocess hr{
+	position:absolute; 
+	width: 69%;
+	border:2px dashed #a5a5a5; 
+	margin-top: 50px; 
+	margin-left: 54%;
+}
+.bullet-content{
+	text-align:center; 
+	font-size:12pt;
+	margin-top:10px;
+}
+.bullet-content a{
+	color:#f47920;
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+.role-text-blog-one {
+    margin-top: 23px;
+    margin-left: 120px;
+    padding: 15px 20px 15px 90px;
+}
+.role-text-blog-two {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 25px 20px 25px 113px;
+}
+.role-text-blog-three {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.role-text-blog-four {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 5px 20px 5px 115px;
+}
+.role-text-blog-five {
+    margin-top: 35px;
+    margin-left: 100px;
+    padding: 10px 20px 10px 113px;
+}
+.role-text-blog-touch {
+    margin-top: 35px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.role-text-blog-assistance {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.role-text-blog-visibility {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.role-text-blog-Compliance {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.role-text-blog-Handling {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.role-text-blog-confirmation {
+    margin-top: 27px;
+    margin-left: 100px;
+    padding: 20px 20px 20px 115px;
+}
+.btn_process_login{
+	color: #fff;
+    background-color: #f47920;
+    border-color: #f47920;
+}
+.btn_process_login:hover{
+	color: #233182;
+    background-color: #f47920;
+    border-color: #f47920;
+}
+.agent-subheading{
+	color: #193380;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (min-width : 951px) and (max-width : 1020px){
+ .iconDetails-adj1{
+     margin-top: -3% !important;
+ } 
+.role-text-blog-one{
+	margin-bottom:3% !important;
+} 
+ .iconDetails-adj2{
+     margin-top: -2% !important;
+ }
+ .iconDetails-adj3{
+     margin-top: -4% !important;
+ }
+ .role-text-blog-two{
+	margin-bottom:3% !important;
+} 
+.role-text-blog-three{
+	margin-bottom:3% !important;
+} 
+.iconDetails-adj4{
+     margin-top: -3% !important;
+ }
+ .role-text-blog-four{
+	margin-bottom:3% !important;
+} 
+.iconDetails-adj5{
+     margin-top: -4% !important;
+ }
+ .role-text-blog-five{
+	margin-bottom:3% !important;
+} 
+}
+
+@media only screen and (min-width: 861px) and (max-width: 950px) {
+
+}
+
+@media only screen and (min-width: 781px) and (max-width: 860px) {
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+.agent-grey-box {
+    background-color: #e1e1e1 !important;
+    border-top-left-radius: 2em !important;
+    border-bottom-left-radius: 2em !important;
+	margin-top: 3% !important;
+}
+.agent-grey-box-img {
+    margin-left: -27px !important;
+	text-align: left !important;
+    padding-top: 0px !important;
+    margin-top: 0% !important;
+}   
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.agent-grey-box{
+	margin-top: 10%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -10%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:left;
+} 
+.img-bank {
+	padding: 20px 10px !important;
+}
+/*.iconDetails {
+    margin-top: 3%;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+    padding: 60px 20px 50px 190px;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 55px 20px 60px 190px;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 45px 20px 50px 190px;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 40px 20px 55px 190px;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 65px 20px 55px 190px;
+}*/
+.iconDetails{
+	margin:3% 35% !important;
+}  
+/*.agent-grey-box{
+	margin-top: 20%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}*/
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 45px 20px 35px 20px;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 50px 20px 45px 20px;
+}
+.role-text-blog-touch {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 55px 20px 60px 190px !important;
+}
+.role-text-blog-confirmation {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 55px 20px 40px 190px !important;
+}
+.role-text-blog-Compliance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 45px 20px 50px 190px !important;
+}
+.role-text-blog-assistance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 40px 20px 55px 190px !important;
+}
+.role-text-blog-Handling {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 35px 20px 40px 190px !important;
+}
+.role-text-blog-visibility {
+    margin-top: 35px;
+    margin-left:0px; 
+	padding: 40px 20px 55px 190px !important;
+}
+.bullets{
+	margin-left:45% !important;
+}
+	
+}
+@media only screen and (min-width : 800px) and (max-width : 800px){
+.iconDetails {
+    margin: 4% 35% !important;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 70px 20px 25px 20px !important;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 70px 20px 25px 20px !important;
+}
+.role-text-blog-three {
+	margin-left: 0px;
+	padding: 55px 20px 25px 20px !important;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 60px 20px 25px 20px !important;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 70px 20px 25px 20px !important;
+}
+.role-text-blog-Handling{
+	padding: 50px 20px 50px 190px !important;
+}
+.role-text-blog-confirmation{
+	padding: 60px 20px 60px 190px !important;
+}
+}
+
+@media only screen and (min-width: 361px) and (max-width: 479px) {
+.agent-grey-box{
+	margin-top: 12%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -12%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+} 
+.iconDetails{
+	margin:7% 22% !important;
+}  
+.role-text-std-bill {
+	margin-top: 0px;
+	margin-left:0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-std-home {
+	margin-top: 0px;
+	margin-left:0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+	margin-top: -20px;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-touch {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-confirmation {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-Compliance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-assistance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-Handling {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-visibility {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+ .agent-grey-box{
+	margin-top: 12%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -12%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}  
+}
+
+/* ============================================== */
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:568px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+.agent-grey-box{
+	margin-top: 12%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -12%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+} 
+.agent-grey-box-txt-m {
+	margin-left: 35px !important;
+}
+.bullets {
+	margin-left:45% !important;
+}
+.iconDetails{
+	margin:7% 29% !important;
+}  
+.agent-grey-box{
+	margin-top: 12%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -12%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 45px 20px 35px 20px;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 50px 20px 45px 20px;
+}
+/*.iconDetails {
+    margin-top: 3%;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 50px 20px 35px 185px;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 40px 20px 40px 185px;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 20px 20px 20px 185px;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 25px 20px 25px 185px;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 50px 20px 50px 185px;
+}*/
+.role-text-blog-touch {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 50px 20px 40px 180px;
+}
+.role-text-blog-confirmation {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 25px 180px;
+}
+.role-text-blog-Compliance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 30px 20px 40px 180px;
+}
+.role-text-blog-assistance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 25px 180px;
+}
+.role-text-blog-Handling {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+.role-text-blog-visibility {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 25px 180px;
+}
+
+/********* customer page ***********/
+.payment-mode-box{
+	margin-right: 0px !important;
+}
+.img-resp-adjust{
+	margin-bottom:3% !important;
+}
+.img-resp-adjust-txt{
+	margin-bottom:5% !important;
+}
+}
+@media only screen and (min-width: 330px) and (max-width: 360px) {
+
+.iconDetails{
+	margin:7% 22% !important;
+}  
+.agent-grey-box{
+	margin-top: 20%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-touch {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-confirmation {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-Compliance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-assistance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-Handling {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 15px 20px !important;
+}
+.role-text-blog-visibility {
+    margin-top: 35px;
+    margin-left:0px; 
+	padding: 20px 20px 15px 20px !important;
+}
+}
+/* ============================================== */
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:480px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+	.verticaltext_content {
+		left: -68px !important;
+	}
+	.img-text {
+		padding: 16px 10px !important;
+	}
+	.iconDetails{
+	margin:7% 29% !important;
+}  
+.agent-grey-box{
+	margin-top: 13%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -13%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+.role-text-blog-one {
+	margin-left: 0px;
+	padding: 45px 20px 35px 20px;
+}
+.role-text-blog-two {
+	margin-left: 0px;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-three {
+	margin-left: 0;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-four {
+	margin-left: 0px;
+	padding: 20px 20px 20px 20px;
+}
+.role-text-blog-five {
+	margin-left: 0px;
+	padding: 50px 20px 45px 20px;
+}
+.role-text-blog-touch {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+.role-text-blog-confirmation {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+.role-text-blog-Compliance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+.role-text-blog-assistance {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+.role-text-blog-Handling {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+.role-text-blog-visibility {
+    margin-top: 35px;
+    margin-left:0px; 
+    padding: 20px 20px 20px 180px;
+}
+
+.bullets{
+	margin-left:45% !important;
+}
+}
+
+/* ============================================== */
+/* iPhone4/Android portrait               320x480 */
+/* iPhone5 portrait                       320x568 */
+/* ============================================== */
+@media screen and (max-width:320px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */  
+	.img-bank{
+		text-align:center !important;
+	}
+.role-text-blog-one,.role-text-blog-two,.role-text-blog-three,.role-text-blog-four,.role-text-blog-five,
+.role-text-blog-touch,.role-text-blog-confirmation ,.role-text-blog-Compliance,.role-text-blog-assistance,
+.role-text-blog-Handling,.role-text-blog-visibility {
+	margin-left: 0px;
+    padding: 16px 20px;
+}
+/********* customer page ***********/
+.payment-mode-box{
+	margin-right: 0px !important;
+}
+.img-resp-adjust{
+	margin-bottom:5% !important;
+}
+.img-resp-adjust-txt{
+	margin-bottom:5% !important;
+}
+.iconDetails{
+	margin:7% 22% !important;
+}  
+.agent-grey-box{
+	margin-top: 20%;
+	border-radius:0px;
+}
+.agent-grey-box-img{
+	text-align: center;
+    padding-top: 0px;
+    margin-left: 0px;
+    margin-top: -20%;
+}
+.agent-grey-box-txt{
+	margin-left:0px !important;
+	padding-top:15px;
+    padding-bottom: 20px;
+	text-align:center;
+}
+
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+/* ============================================== */
+@media screen and (min-width:240px) and (max-width:320px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+	.iconDetails {
+    margin: 7% 17% !important;
+}
+	#bbpouprocess{
+		margin-bottom:120px !important;
+	}
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+/* ============================================== */
+@media screen and (max-width:240px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+}
+
+
+/*****************************************************/
+/******************************************************/
+
+@media screen and (min-width:1024px) and (max-width:1024px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.role-text-blog-one {
+	margin-left: 85px !important;
+	padding: 10px 10px 10px 100px !important;
+	margin-top: 27px !important;
+}
+ .role-text-blog-two{
+	margin-left: 85px !important;
+	padding: 10px 10px 10px 100px !important;
+	margin-top:35px !important;
+ }
+.role-text-blog-three {
+	margin-left: 46px !important;
+	padding: 10px 10px 10px 140px !important;
+	margin-top: 24px;
+	
+}
+.role-text-blog-four {
+	margin-left: 85px !important;
+    padding: 10px 10px 10px 100px !important;
+    margin-top: 13px !important;
+}
+.role-text-blog-five {
+	margin-left: 85px !important;
+	padding: 10px 10px 10px 100px !important;
+	margin-top: 35px !important;
+}
+.role-text-blog-visibility {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 10px 20px 16px 115px;
+}
+.role-text-blog-Handling  {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 10px 20px 16px 115px;
+}
+.role-text-blog-assistance   {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 10px 20px 16px 115px;
+}
+.role-text-blog-confirmation {
+    margin-top: 15px;
+}
+.role-text-blog-Compliance {
+    margin-top: 15px;
+}
+.role-text-blog-touch {
+    margin-top: 22px;
+}
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1280px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.role-text-blog-one {
+	margin-top:30px !important;
+	margin-left: 75px !important;
+	padding: 10px 10px 10px 115px !important;
+}
+.role-text-blog-two{
+	margin-top:35px !important;
+	margin-left: 75px !important;
+	padding: 10px 10px 10px 120px !important;
+}
+.role-text-blog-three {
+	margin-top:22px !important;
+	margin-left: 75px !important;
+	padding: 10px 10px 10px 120px !important;
+}
+.role-text-blog-four {
+	margin-top:22px !important;
+	margin-left: 75px !important;
+	padding: 10px 10px 10px 120px !important;
+}
+.role-text-blog-five {
+	margin-top:45px !important;
+	margin-left: 75px !important;
+	padding: 10px 10px 10px 120px !important;
+}
+.role-text-blog-assistance {
+    margin-top: 13px;
+}
+
+@media only screen and (min-width: 1279px) and (max-width: 1366px){
+.role-text-blog-visibility {
+    margin-top: 16px;
+}
+.role-text-blog-Handling {
+    margin-top: 16px;
+}
+.role-text-blog-touch {
+    margin-top: 27px;
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px){
+.role-text-blog-four {
+    margin-top: 14px;
+}
+.role-text-blog-touch {
+    margin-top: 25px;
+}
+.role-text-blog-Handling {
+    margin-top: 14px;
+}
+
+
+}
